@@ -22,17 +22,28 @@ const Missions = () => {
   return (
     <div className="bg-slate-950 text-white">
       <div className="container">
-        {MissionsData.map((mission) => (
-          <div className="flex gap-4 h-[400px]">
-            <div className="w-[500px]">
+        {MissionsData.map((mission, i) => (
+          <div
+            className={
+              "w-full flex gap-16 h-auto md:h-[450px] p-10 items-center flex-col md:flex-row"
+            }
+          >
+            <div className={`flex-1 h-full ${i % 2 == 1 && "md:order-last"}`}>
               <img
                 src={mission.img}
                 alt=""
-                className="h-full w-full object-cover"
+                className="w-full h-full object-cover"
               />
             </div>
-            <div className="self-center">
-              <p>Our Mission</p>
+            <div
+              className={`space-y-4 p-6 pt-0 flex-1 border-sky-800
+              ${
+                i % 2 == 1
+                  ? "border-l-2 border-b-2 rounded-bl-xl"
+                  : "border-r-2 border-b-2 rounded-br-xl"
+              }`}
+            >
+              <p className="uppercase text-lg text-sky-700">Our Mission</p>
               <h3 className="text-5xl">{mission.title}</h3>
               <p>{mission.description}</p>
               <Button>Learn More</Button>

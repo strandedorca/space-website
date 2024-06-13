@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero";
 import Services from "./components/Services/Services";
 import surface from "./assets/moon-surface-hd.png";
 import Missions from "./components/Missions/Missions";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -33,6 +34,9 @@ const App = () => {
 
       {/* Missions Section */}
       <Missions />
+
+      {/* Footer Section */}
+      <Footer />
     </div>
   );
 };
