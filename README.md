@@ -1,30 +1,20 @@
-# React + TypeScript + Vite
+# SPACE WEBSITE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This website is an attempt to learn Tailwind + Responsive Design for Web Development
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React, Tailwind, TypeScript.
+- AOS for Animate On Scrolling.
+- VS Code.
+- Git & GitHub.
 
-## Expanding the ESLint configuration
+## Sources
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+I didn't just follow along the video, but rather first attempted to solve the problem on my own, then study their way to know how they handle it.
+[Link Video](https://youtu.be/hmgtCXQ47Cs?si=xtprEevV181bwvl5)
 
-- Configure the top-level `parserOptions` property like this:
+## Learning Process
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+The details of what I've learned is posted in this log
+[Link](https://bestofmau.notion.site/Responsive-Space-Website-3f2ef24ae6e54a09bd7bae40862d988e?pvs=4)

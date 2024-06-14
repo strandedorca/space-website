@@ -6,8 +6,10 @@ const Hero = () => {
     <div className="bg-black/20 h-full text-white flex items-center">
       <div className="container grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="space-y-4 lg:pr-36">
-          <h1 className="text-5xl font-bold uppercase">Orbit The Earth</h1>
-          <p>
+          <h1 data-aos="fade-up" className="text-5xl font-bold uppercase">
+            Orbit The Earth
+          </h1>
+          <p data-aos="fade-up" data-aos-delay="300">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
             doloremque dignissimos culpa consequatur earum enim, sequi tenetur,
             molestiae quasi rem ducimus incidunt placeat dolorem cupiditate

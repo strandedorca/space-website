@@ -4,7 +4,10 @@ import logo from "../../assets/logo.png";
 const Navbar = () => {
   return (
     // Background div
-    <div className="fixed right-0 top-0 w-full bg-black/10 backdrop-blur-sm py-4 z-50">
+    <div
+      data-aos="fade-down"
+      className="fixed right-0 top-0 w-full bg-black/10 backdrop-blur-sm py-4 z-50"
+    >
       {/* Container with padding: 2rem (extended in the config) */}
       <div className="container">
         <div className="flex justify-between items-center">

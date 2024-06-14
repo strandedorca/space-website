@@ -9,7 +9,7 @@ const ServiceData = [
     description:
       "Part of the Global Positioning System (GPS) used for navigation.",
     icon: <RiGpsFill />,
-    aosDelay: "700",
+    aosDelay: "300",
   },
   {
     title: "HST",
@@ -17,7 +17,7 @@ const ServiceData = [
     description:
       "Used for astronomical observations, capturing stunning images of the universe.",
     icon: <FaReact />,
-    aosDelay: "300",
+    aosDelay: "500",
   },
   {
     title: "ISS",
@@ -25,7 +25,7 @@ const ServiceData = [
     description:
       "It's a habitable artificial satellite orbiting Earth and serves as a space environment research laboratory.",
     icon: <FaRocket />,
-    aosDelay: "500",
+    aosDelay: "700",
   },
 ];
 
@@ -35,7 +35,11 @@ const Services = () => {
       <div className="container">
         <div className="grid sm:grid-cols-3 grid-cols-1 gap-6">
           {ServiceData.map((service) => (
-            <div className="lg:w-[300px] flex flex-col text-center justify-center items-center w-full space-y-3 bg-sky-800/60 rounded-xl mx-auto px-5 py-8">
+            <div
+              data-aos="fade-up"
+              data-aos-delay={service.aosDelay}
+              className="lg:w-[300px] flex flex-col text-center justify-center items-center w-full space-y-3 bg-sky-800/60 rounded-xl mx-auto px-5 py-8"
+            >
               <div className="text-7xl">{service.icon}</div>
               <p className="text-xl">{service.title}</p>
               <p className="text-xl">{service.content}</p>

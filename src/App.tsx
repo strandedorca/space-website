@@ -6,8 +6,17 @@ import Services from "./components/Services/Services";
 import surface from "./assets/moon-surface-hd.png";
 import Missions from "./components/Missions/Missions";
 import Footer from "./components/Footer/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const App = () => {
+  React.useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      easing: "ease-in-out",
+    });
+  }, []);
+
   return (
     <div>
       {/* Menu and Hero Section */}

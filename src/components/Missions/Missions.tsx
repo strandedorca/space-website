@@ -30,6 +30,7 @@ const Missions = () => {
           >
             <div className={`flex-1 h-full ${i % 2 == 1 && "md:order-last"}`}>
               <img
+                data-aos="zoom-in"
                 src={mission.img}
                 alt=""
                 className="w-full h-full object-cover"
@@ -43,9 +44,15 @@ const Missions = () => {
                   : "border-r-2 border-b-2 rounded-br-xl"
               }`}
             >
-              <p className="uppercase text-lg text-sky-700">Our Mission</p>
-              <h3 className="text-5xl">{mission.title}</h3>
-              <p>{mission.description}</p>
+              <p data-aos="fade-up" className="uppercase text-lg text-sky-700">
+                Our Mission
+              </p>
+              <h3 data-aos="fade-up" data-aos-delay="300" className="text-5xl">
+                {mission.title}
+              </h3>
+              <p data-aos="fade-up" data-aos-delay="500">
+                {mission.description}
+              </p>
               <Button>Learn More</Button>
             </div>
           </div>
